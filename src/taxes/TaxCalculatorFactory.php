@@ -12,7 +12,7 @@ class TaxCalculatorFactory implements TaxCalculatorFactoryInterface
   private $factories = [];
   /**
    * Register a callable that returns an instance of
-   * EncoderInterface for the given format.
+   *  TaxCalculatorFactory.
    *
    * @param string $format
    * @param callable $factory
