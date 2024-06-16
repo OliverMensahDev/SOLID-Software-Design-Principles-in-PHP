@@ -6,7 +6,7 @@ use app\persistence\EmployeeFileSerializer;
 use app\persistence\FileStore;
 use app\personnel\FullTimeEmployee;
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 //dependencies 
 $repository = new EmployeeRepository(new EmployeeFileSerializer());

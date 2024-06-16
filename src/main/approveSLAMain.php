@@ -3,7 +3,7 @@
 use app\personnel\ServiceLicenseAgreement;
 use app\personnel\Subcontractor;
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 //Define SLA
 $minTimeOutPercent = 98;

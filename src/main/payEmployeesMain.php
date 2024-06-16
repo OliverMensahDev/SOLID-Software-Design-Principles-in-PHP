@@ -5,7 +5,7 @@ use app\payment\PaymentProcessor;
 use app\persistence\EmployeeFileSerializer;
 use app\persistence\EmployeeRepository;
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 
 $paymentProcessor = new PaymentProcessor(new EmployeeRepository(new EmployeeFileSerializer()), new EmailSender());

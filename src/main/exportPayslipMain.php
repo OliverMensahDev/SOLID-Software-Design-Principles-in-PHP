@@ -5,7 +5,7 @@ use app\logging\ConsoleLogger;
 use app\persistence\EmployeeRepository;
 use app\persistence\EmployeeFileSerializer;
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 $repository = new EmployeeRepository(new EmployeeFileSerializer());
 $employees = $repository->findAll();

@@ -27,7 +27,7 @@ class EmployeeRepository implements EmployeeRepoInterface
     {
         $employees = [];
 
-        $myfile = fopen("../../resources/employees.csv", "r") or die("Unable to open file!");
+        $myfile = fopen("./resources/employees.csv", "r") or die("Unable to open file!");
         while (!feof($myfile)) {
             $employee = $this->createEmployeeFromCsvRecord(fgets($myfile));
             $employees[] = $employee;

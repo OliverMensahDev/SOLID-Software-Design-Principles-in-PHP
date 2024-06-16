@@ -11,7 +11,7 @@ use app\taxes\InternTaxCalculator;
 use app\taxes\PartTimeTaxCalculator;
 use app\taxes\TaxCalculatorFactory;
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 $repository = new EmployeeRepository(new EmployeeFileSerializer());
 $employees  = $repository->findAll();
